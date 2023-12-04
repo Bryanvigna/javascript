@@ -17,9 +17,16 @@
         function verificar(){
             var país = document.getElementById('país')
             var res = document.querySelector('div#res')
-
-            res.innerHTML= `<p>Você é do ${país}</p>`
-           
+            var país = String(país.value)
+            res.innerHTML= `<p>you are a foreigner from ${país}</p>`
+            if(país == 'brasil'){
+                res.innerHTML=`<p>eae brasileirinho!</p>`
+            } else{
+                res.innerHTML+=`Hi foreigner!`
+            }
+            if(país == 'Brasil'){
+                res.innerHTML=`<p>eae brasileirinho!</p>`
+            }
         }
     </script>
 </body>
