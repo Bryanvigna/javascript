@@ -20,12 +20,16 @@
             var país = String(país.value)
             res.innerHTML= `<p>you are a foreigner from ${país}</p>`
             if(país == 'brasil'){
-                res.innerHTML=`<p>eae brasileirinho!</p>`
+                res.innerHTML=`<p>você é do ${país}!`
+                res.innerHTML+=`<p>eae brasileirinho!</p>`
             } else{
-                res.innerHTML+=`Hi foreigner!`
-            }
-            if(país == 'Brasil'){
-                res.innerHTML=`<p>eae brasileirinho!</p>`
+                if(país=='Brasil'){
+                    res.innerHTML=`<p>você é do ${país}!`
+                    res.innerHTML+=`<p>eae brasileirinho!</p>`
+                }else{
+                   res.innerHTML+=`Hi foreigner!` 
+                }
+                
             }
         }
     </script>
