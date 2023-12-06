@@ -15,9 +15,11 @@ section{
     background: white;
     border-radius: 20px;
     padding: 15px;
-    width: 500px;
+    width: 400px;
+    height: 350px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    transition: .4s;
 }
 footer,a{
     color: white;
